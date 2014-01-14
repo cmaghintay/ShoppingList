@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>The List</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <header>
+        <div id="navContainer">
+            <a href="index.html" id="title">chekov</a>
+            <span id="tagline">- a basic task list application</span>
+        </div>
+    </header>
+    <div id="mainContainer">
+        <div id="controllerContainer">
+            <h1>Complete the task, <em>checkov.</em></h1>
+            <form id="taskContainer">
+                <input type="text" id="newTask" placeholder="Add a new task here...">
+                <button type="submit" id="submitTask">Add Task</button>
+            </form>
+            <ul>
+                <li class="tips">Click on<span class="markCompleteButton">Mark as complete.</span>when you've completed a task to cross it off the list.</li>
+                <li class="tips">To help you prioritize your list, you can drag your list items to change list order.</li>
+            </ul>
+
+        </div>
+        <div id="listContiner">
+            <ul id="taskList">
+                <li class="taskItem"><input class="checkbox" type="checkbox">Locate nuclear vessels.<span class="deleteButton">Delete</span></li>
+                <li class="taskItem"><input class="checkbox" type="checkbox">Don't forget  "Botany Bay."<span class="deleteButton">Delete</span></li>
+                <li class="taskItem"><input class="checkbox" type="checkbox">Fire photon torpedos.<span class="deleteButton">Delete</span></li>
+            </ul>
+        </div>
+        <span id="clearButton">clear completed items</span>
+    </div>
+    <footer>
+        <span class="footerBar">Version 1</span>
+    </footer>
+</body>

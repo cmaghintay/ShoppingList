@@ -1,0 +1,179 @@
+header {
+    text-align:center;
+    background-color:#000;
+    height:35px;
+    box-shadow:3px 1px 10px #cbcbcb;
+
+}
+
+#navContainer {
+    text-align:left;
+    width:60%;
+    line-height:40px;
+    vertical-align:middle;
+    margin:0 auto;
+    min-width:400px;
+
+    
+
+}
+
+#title {
+    color:#fff;
+    background-color:#000000;
+    text-decoration:none;
+    font-family:sans-serif;
+    font-weight:bolder;
+    font-size:25px;
+    display:inline-block;
+    margin:0 10px 0 -20px;
+    height:40px;
+    padding:0 20px;
+    position:relative;
+    border-radius:25px;
+    box-shadow:1px 1px 5px rgba(0, 0, 0, 0.29);
+
+
+}
+
+.navButton {
+    color:rgb(114, 113, 113);
+    background-color:#1c1c1c;
+    font-family:sans-serif;
+    
+    display:inline-block;
+    padding:0 10px;
+}
+#controllerContainer {
+    width: 100%;
+}
+
+#listContiner {
+    padding:10px 10px 0 0;
+    width:98%;
+    height:auto;
+    background-color:#fff;
+    border:dotted 1px #000000;
+    border-left-width:0px;
+    border-bottom-width:0px;
+}
+
+#mainContainer {
+    background-color:#fff;
+    height:auto;
+    width: 60%;
+    min-width:400px;
+    margin:20px auto 100px auto;
+    padding:15px 15px;
+    box-shadow:1px 1px 10px #cbcbcb;
+}
+
+p {
+    font:12px sans-serif;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+h1 {
+    font:bold 17px sans-serif;
+    margin-bottom:10px;
+}
+
+#taskContainer {
+    padding:10px 0;
+    border-top:dotted 1px #000;
+    border-bottom:dotted 1px #000;
+    margin-bottom:10px;
+}
+
+label {
+    display:block;
+}
+
+#submitTask {
+    display:inline-block;
+    height:26px;
+    width:20%;
+    background-color:rgb(234, 252, 255);
+    border:solid 1px rgb(59, 200, 224);
+}
+
+#submitTask:hover {
+    background-color:rgb(234, 255, 244);
+    border:solid 1px rgb(59, 224, 91);
+}
+
+.taskItem {
+    display:block;
+    padding:10px 50px 10px 10px;
+    font:lighter 15px sans-serif;
+    margin-bottom:10px;
+    background-color:rgb(234, 252, 255);
+    border:solid 1px rgb(59, 200, 224);
+}
+
+.taskItem:hover {
+    display:block;
+    padding:10px 50px 10px 10px;
+    font:normal 15px sans-serif;
+    margin-bottom:10px;
+    background-color:rgb(234, 255, 244);
+    border:solid 1px rgb(59, 224, 91);
+}
+
+.deleteButton {
+    color:rgb(255, 63, 144);
+    margin: 5px;
+    font: 10px sans-serif;
+}
+
+.markCompleteButton:hover {
+    color:rgb(255, 63, 144);
+    text-decoration:underline;
+    margin-left: 5px;
+    font: 10px sans-serif;
+}
+.tips {
+    font:10px sans-serif;
+    list-style-type:square;
+    margin-bottom:10px;
+    margin-left:20px;
+}
+
+footer {
+    position:fixed;
+    height:25px;
+    width:100%;
+    background-color:#000000;
+    text-align:center;
+    bottom:0;
+}
+
+.footerBar {
+    color:#fff;
+    font:10px sans-serif;
+    line-height:25px;
+}
+
+body {
+    background-image:url(bg.png);
+}
+
+#clearButton {
+    font:14px sans-serif;
+    color:rgb(255, 63, 144);
+}
+
+#tagline {
+    position:relative;
+    display:inline-block;
+    color:#fff;
+    font:12px sans-serif;
+    letter-spacing:5px;
+    bottom:5px;
+    right:20px;
+}
+
+.checkbox {
+    margin-right:10px;
+}
