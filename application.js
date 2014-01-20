@@ -6,8 +6,14 @@ $(document).ready(function () {
     
     $("#submitTask").click(function () {
         var newTask = $("#newTask").val();
-        console.log("User added: " + newTask);
+        var newTask = newTask.replace(/^\s+|\s+$/g, '');
+        if (newTask==null || newTask=="") {
+            alert("Red Alert! Please enter a task.");
+            return false;
+        };
         $("#taskList").append("<li class='taskItem'><input class='checkbox' type='checkbox'>" + newTask + "<span class='deleteButton'>Delete</span></li>");
+        //RESET FORM
+        document.getElementById("newTask").value="";
     });
     
 //Checking Off    
@@ -23,6 +29,10 @@ $(document).ready(function () {
         $(".taskItemComplete").remove();
     });
     
-//Functions
-        
+//Deleting Items
+    
+    $(".deleteButton").click(function(){
+        $(this).parent("li").remove();
+    });
+    
 });

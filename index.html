@@ -28,9 +28,7 @@
 
                 </ul>
             </div>
-                
-                
-    
+                    
             </div>
             <span id="clearButton">clear completed items</span>
         </div>
@@ -39,16 +37,16 @@
         
         <div class="container">
             <h1>Just <em>one more thing!</em></h1>
-            <form id="taskContainer">
+            <form onsubmit="return false" id="taskContainer">
                 <input type="text" id="newTask" placeholder="Add a new task here...">
-                <button type="button" id="submitTask">Add Task</button>
+                <button type="submit" id="submitTask">Add Task</button>
             </form>
                 
 <!--HINTS                -->
                 
         <ul>
-            <li class="tips">Click on<span class="deleteButton">Delete</span>to remove an item from your list.</li>
-            <li class="tips">To help you prioritize your list, you can drag your list items to change list order.</li>
+            <li class="tips">Click delete to remove an item from your list.</li>
+            
         </ul>    
         </div>
         
