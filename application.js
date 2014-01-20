@@ -31,7 +31,7 @@ $(document).ready(function () {
     
 //Deleting Items
     
-    $(".deleteButton").click(function(){
+    $("#taskList").on("click", "span", function(){
         $(this).parent("li").remove();
     });
     
