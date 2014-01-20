@@ -46,12 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-#newTask {
-    padding-left:5px;
-    width:76%;
-    height:20px;
-    display:inline-block;
-}
 
 em {
     font-style:italic;
