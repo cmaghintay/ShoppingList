@@ -58,12 +58,12 @@ header {
     border-bottom-width:0px;
 }
 
-#mainContainer {
+.container {
     background-color:#fff;
     height:auto;
     width: 60%;
     min-width:400px;
-    margin:20px auto 100px auto;
+    margin:20px auto 0 auto;
     padding:15px 15px;
     box-shadow:1px 1px 10px #cbcbcb;
 }
@@ -112,19 +112,28 @@ label {
     border:solid 1px rgb(59, 200, 224);
 }
 
-.taskItem:hover {
+.taskItemComplete {
     display:block;
     padding:10px 50px 10px 10px;
-    font:normal 15px sans-serif;
+    font:lighter 15px sans-serif;
+    text-decoration:line-through;
     margin-bottom:10px;
-    background-color:rgb(234, 255, 244);
-    border:solid 1px rgb(59, 224, 91);
+    background-color:rgba(255, 63, 144, 0.38);
+    border:solid 1px rgb(255, 63, 144);
 }
 
 .deleteButton {
     color:rgb(255, 63, 144);
     margin: 5px;
     font: 10px sans-serif;
+}
+
+.deleteButton:hover {
+    color:rgb(255, 63, 144);
+    margin: 5px;
+    font: 10px sans-serif;
+    text-decoration:underline;
+    cursor:pointer;
 }
 
 .markCompleteButton:hover {
@@ -162,6 +171,13 @@ body {
 #clearButton {
     font:14px sans-serif;
     color:rgb(255, 63, 144);
+}
+
+#clearButton:hover {
+    font:14px sans-serif;
+    color:rgb(255, 63, 144);
+    text-decoration:underline;
+    cursor:pointer;
 }
 
 #tagline {
