@@ -6,11 +6,13 @@ $(document).ready(function () {
     
     $("#submitTask").click(function () {
         var newTask = $("#newTask").val();
-        var newTask = newTask.replace(/^\s+|\s+$/g, '');
-        if (newTask==null || newTask=="") {
+            newTask = newTask.replace(/^\s+|\s+$/g, '');
+        
+        while (newTask==null || newTask=="") {
             alert("Red Alert! Please enter a task.");
             return false;
         };
+        
         $("#taskList").append("<li class='taskItem'><input class='checkbox' type='checkbox'>" + newTask + "<span class='deleteButton'>Delete</span></li>");
         //RESET FORM
         document.getElementById("newTask").value="";
